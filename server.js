@@ -1,5 +1,5 @@
-const dotenv = require('dotenv');
-dotenv.config({ path: './config.env' });
+// const dotenv = require('dotenv');
+// dotenv.config({ path: './config.env' });
 
 
 // handling uncaught exceptions globally
