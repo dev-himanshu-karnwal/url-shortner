@@ -1,0 +1,21 @@
+doctype html
+head
+    title URL Shortner
+    link(rel='stylesheet' href='css/style.css')
+.maincontainer
+    h1 URL Shortner
+    form(action='/' method='POST')
+        label(for='long-url') Enter or Paste Your long URL:
+        input#long-url(type='text' name='longUrl' value=`${longUrl?longUrl:''}` required)
+        button#shorten-btn(type='submit') Shorten
+    #short-url-container(style=`${display? 'visibility: visible': ''}`)
+        p Here&apos;s your shortened URL:
+        #short-url
+            a(href=`${protocol}://${url}` target='_blank')= url
+            button#copy-btn(type='button') Copy
+    .credit
+        | Made with 
+        span &#x2764;
+        a Node JS
+        span &#x2764; 
+        | by Himanshu
