@@ -10,7 +10,7 @@ const app = express();
 app.use(express.static(`${__dirname}/public`));
 
 // getting all request/response logs
-// app.use(morgan('dev'));
+app.use(morgan('dev'));
 
 // body parser
 app.use(express.json());
